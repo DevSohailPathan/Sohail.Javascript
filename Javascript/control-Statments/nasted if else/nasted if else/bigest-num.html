@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- income less than 250 and 500 -->
+<body>
+
+
+    <script>
+
+        let mark = prompt("Enter your mark")
+        let income = prompt("enter you anual income")
+        if (mark >= 85) {
+            if (income <= 250) {
+                alert("Full scholarship")
+            }
+            else {
+                if (income <= 500) {
+                    alert("Half scholarship")
+                }
+                else {
+                    alert("No scholorship")
+                }
+
+            }
+
+
+        }
+        else {
+            alert("Not eligible")
+        }
+    </script>
+</body>
+
+</html>

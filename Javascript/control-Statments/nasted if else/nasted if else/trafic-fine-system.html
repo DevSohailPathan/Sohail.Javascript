@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let speed = prompt("Enter your bike speed")
+        let license = prompt("Enter License Yes / No  ")
+
+        if (speed > 80) {
+            if (license == "yes") {
+                if (speed > 120) {
+                    alert("Heavy Fine")
+                }
+                else {
+                    alert("Normal Fine")
+                }
+            }
+            else {
+                alert("Vehicle Seized")
+            }
+
+        }
+        else {
+            alert("No Fine")
+        }
+    </script>
+</body>
+
+</html>

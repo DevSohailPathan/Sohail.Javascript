@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let balance = prompt("Enter your balance")
+        let withdraw = prompt("Enter your withdraw amount")
+        if (balance >= 1000) {
+            if (withdraw <= balance) {
+                alert("Transaction success")
+            }
+            else {
+                alert("Insufficient balance")
+            }
+        }
+        else {
+            alert("Low balance")
+        }
+    </script>
+</body>
+
+</html>

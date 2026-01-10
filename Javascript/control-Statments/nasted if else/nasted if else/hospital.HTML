@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Dotor Availabel?</label><br>
+    <input id="input" type="Radio"><label>yes</label><br>
+    <input id="input-one" type="Radio"><label>No</label> <br><br>
+    <label>Appointment Book?</label><br>
+    <input id="input-three" type="Radio"><label>yes</label><br>
+    <input id="input-four" type="Radio"><label>No</label><br><br>
+    <label>Payment </label><br>
+    <input id="input-five" type="Radio"><label>Done</label><br>
+    <input id="input-six" type="Radio"><label>Pending</label><br><br>
+    <button onclick="Appointment()">Book Apointment</button>
+    <h3 id="display"></h3>
+
+
+    <script>
+        let call = ""
+        function Appointment() {
+            if (document.getElementById("input").checked) {
+                if (document.getElementById("input-three").checked) {
+                    if (document.getElementById("input-five").checked) {
+                        call = "Appointment Book"
+                    }
+                    else {
+                        call = "payment peanding"
+                    }
+
+                }
+                else {
+                    call = "Appointment not book"
+                }
+
+            }
+            else {
+                call = "Doctor Not Available"
+            }
+            document.getElementById("display").innerHTML = call;
+
+        }
+
+    </script>
+</body>
+
+</html>

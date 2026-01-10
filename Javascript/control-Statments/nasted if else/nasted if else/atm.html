@@ -1,0 +1,32 @@
+Atm
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atm withdraw</title>
+</head>
+
+<body>
+    <script>
+        let currentbalance = 10000;
+        let withdrw = prompt("your Balance is :" + currentbalance + "\nEnter withdraw amount")
+        let balance = "";
+        if (currentbalance > 0) {
+            if (currentbalance < withdrw) {
+                alert("insufficient")
+            }
+            else {
+                currentbalance = currentbalance - withdrw
+                alert(currentbalance)
+            }
+        }
+        else {
+            alert("Enter a valid amount")
+        }
+
+    </script>
+</body>
+
+</html>
