@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let speed = prompt("Enter your Bike Speed")
+
+        switch (true) {
+            case (speed <= 60):
+                alert("No fine")
+                break
+
+            case (speed <= 80):
+                alert("₹500 fine")
+                break
+
+            case (speed <= 100):
+                alert("₹1000 fine")
+                break
+
+                default:
+                    alert("License Cancel")
+        }
+    </script>
+</body>
+
+</html>
