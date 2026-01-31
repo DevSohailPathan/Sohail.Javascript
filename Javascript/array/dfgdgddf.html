@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .main{
+            height: 50%;
+            width: 25%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+           box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.217);
+            align-items: center;
+            flex-direction: column; 
+        }
+        .display{
+            height: 15%;
+            width: 70%;
+            background-color: yellowgreen;
+        }
+        .text{
+            font-size: 20px;
+        }
+        input{
+            height: 30px;
+            width: 50%;
+        }
+        button{
+            height: 35px;
+            width: 40%;
+            background-color: rgb(0, 164, 0);
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main">
+            <h1>Sum Calculator</h1>
+            <div class="display"></div>
+            <br>
+            <div class="text">First Number</div>
+            <br>
+            <input type="text">
+            <br>
+            <div class="text">Second Number</div>
+            <br>
+            <input type="text">
+            <br>
+            <button>Add</button>
+        </div>
+    </div>
+</body>
+</html>
